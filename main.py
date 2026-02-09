@@ -1,5 +1,5 @@
 #=================================================================================
-#Importação das bibliotecas necessárias
+#Importação das bibliotecas necessárias para o projeto
 from kivy.app import App
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.button import Button
