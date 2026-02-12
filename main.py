@@ -21,6 +21,7 @@ from kivy.properties import ListProperty
 from kivy.metrics import sp
 from kivy.core.window import Window
 
+# Botões usados no app
 class BtnPersonalizado(ButtonBehavior,Label):
     cor=ListProperty([0.6,0.6,0.7,1])
     cor2=ListProperty([0.4,0.4,0.5,1])
