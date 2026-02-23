@@ -1,6 +1,7 @@
 #=================================================================================
 #Importação das bibliotecas necessárias para o projeto
 from kivy.app import App
+from kivy.uix.gridlayout import GridLayout
 from kivy.uix.screenmanager import ScreenManager, Screen
 from kivy.uix.button import Button
 from kivy.uix.filechooser import FileChooser
@@ -20,6 +21,13 @@ from kivy.graphics import Color,Ellipse,Rectangle
 from kivy.properties import ListProperty
 from kivy.metrics import sp
 from kivy.core.window import Window
+from kivy.uix.behaviors import ButtonBehavior
+from kivy.uix.image import Image 
+
+
+class ImageButton(ButtonBehavior, Image):
+    pass 
+
 
 # Botões usados no app
 class BtnPersonalizado(ButtonBehavior,Label):
@@ -1022,7 +1030,7 @@ Builder.load_string("""
                             spacing: 10
 
                             BtnPersonalizado:
-                                text: 'Cadastrar Produto '
+                                text: 'Cadastrar Produto'
                                 halign:'center'
                                 on_release: app.root.current = 'cadPro'
                             BtnPersonalizado:
